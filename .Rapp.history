@@ -1,0 +1,285 @@
+bye()
+swirl()
+x1c <- simbias()
+apply(x1c, 1, mean)
+fit1 <- lm(Fertility ~ Agriculture,data=swiss)
+fit3 <- lm(Fertility ~ Agriculture+Examination+Education,data=swiss)
+anova(fit1,fit3)
+deviance(fit3)
+d <- deviance(fit3)/43
+n <- (deviance(fit1)-deviance(fit3))/2
+n/d
+pf(n/d, 2, 43, lower.tail=FALSE)
+shapiro.test(fit3$residuals)
+anova(fit1, fit3, fit5, fit6)
+ravenData
+mdl <- glm(ravenWinNum ~ ravenScore,family="binomial",data=ravenData)
+lodds <- predict(mdl, data.frame(ravenScore=c(0, 3, 6)))
+exp(lodds)/(1+exp(lodds))
+summary(mdl)
+confint(mdl)
+exp(confint(mdl))
+anova(mdl)
+qchisq(0.95, 1)
+var(rpois(1000, 50))
+head(hits)
+class(hits[,'date'])
+as.integer(head(hits[,'date']))
+mdl <-#
+| glm(visits ~ date, poisson, hits)
+mdl <- glm(visits ~ date, poisson, hits)
+mdl0 <- glm(ravenWinNum ~ 1, binomial, ravenData),
+mdl0 <- glm(ravenWinNum ~ 1, binomial, ravenData)
+summary(mdl0)
+summary(mdl)
+exp(confint(mdl, 'date')#
+)
+which.max(hits[,'visits'])
+hits[704,]
+lambda <-  mdl$fitted.values[704]
+qpois(.95, lambda)
+mdl2 <- glm(visits ~ offse+date, poisson, hits)
+mdl2 <- glm(visits ~ offset+date, poisson, hits)
+mdl2 <- glm(visits ~ date, poisson, hits)
+mdl2 <- glm(formula = simplystats ~ date, family = poisson, data = hits, offset = log(visits + 1))
+qpois(.95,#
+| mdl2$fitted.values[704])
+qpois(.95,mdl2$fitted.values[704])
+head(autoloader)
+data(InsectSprays)
+mdl2 <- glm(visits ~ offse+date, poisson, hits)
+head(InsectSprays)
+glm(count ~ factor(spray,poison),InsectSprays)
+glm(count ~ factor(spray),poison,InsectSprays)
+glm(count ~ factor(spray),poisson,InsectSprays)
+exp(glm(count ~ factor(spray),poisson,InsectSprays))
+exp(glm(count ~ factor(spray),poisson,InsectSprays)$coefficients)
+glm(count ~ x * offset(t), family = poisson)
+exp(glm(count ~ factor(spray),poisson,InsectSprays)$coefficients)
+(glm(count ~ factor(spray),poisson,InsectSprays)$coefficients)
+1/1.05
+1/1.0574713
+x <- -5:5
+y <- c(5.12, 3.93, 2.67, 1.87, 0.52, 0.08, 0.93, 2.05, 2.54, 3.87, 4.97)
+data(shuttle)
+shuttle
+head(shuttle)
+data(MASS)
+load.library(MASS)
+install.packages("MASS")
+data(MASS)
+install.packages(MASS)
+install.packages("MASS")
+shuttle
+install.packages("MMST")
+data(MMST)
+data(shuttle)
+installed.packages()
+library("MASS")
+shuttle
+head(shuttle)
+glm(use ~ wind,shuttle)
+glm(use ~ wind,binomial,shuttle)
+exp(glm(use ~ wind,binomial,shuttle))
+exp(glm(use ~ wind,binomial,shuttle)$coefficients)
+exp(glm(use ~ factor(wind,binomial,shuttle)$coefficients))
+exp(glm(use ~ factor(wind),binomial,shuttle)$coefficients))
+exp(glm(use ~ factor(wind),binomial,shuttle)$coefficients)
+1/ 0.9686888
+exp(glm(use ~ factor(wind)+magn,binomial,shuttle)$coefficients)
+1/0.9684981
+exp(glm(use ~ factor(wind),binomial,shuttle)$coefficients)
+exp(glm(use-1 ~ factor(wind),binomial,shuttle)$coefficients)
+exp(glm((use-1) ~ factor(wind),binomial,shuttle)$coefficients)
+g1 <- glm(use ~ factor(wind),binomial,shuttle)
+g2 <- glm(use ~ g1-1,binomial,shuttle)
+g1
+head(shuttle)
+g1 <- glm(use ~ factor(wind),binomial,shuttle)
+predict(g1,shuttle)
+predict(g1-1,shuttle)
+g1
+p1 <- predict(g1,shuttle)
+predict(p1-1,shuttle)
+p1
+dim(p1)
+p1
+class(p1)
+p1[1,]
+p1
+class(p1)
+predict(data.frame(p1),shuttle)
+predict(g1,data.frame(p1))
+predict(g1,data.frame(p1),shuttle)
+predict(g1,data.frame(p1))
+x
+y
+lm(y ~ x)
+cbind(1,x,c(1))
+xmat <- cbind(1,x,c(0))
+xmat
+lm(y ~ xmat)
+lm(y ~ xmat-1)
+lm(y ~ xmat)
+exp(lm(y ~ xmat-1))
+exp(lm(y ~ xmat-1)$coefficients)
+predict(lm(y ~ xmat-1))
+yhat <- predict(lm(y ~ xmat-1))
+plot(x,yhat)
+lm(y ~ xmat))
+lm(y ~ xmat)
+lm(y ~ xmat-1)
+exp(lm(y ~ xmat-1))
+exp(lm(y ~ xmat-1)$coefficients)
+xmat
+xmat <- cbind(1,x,c(1,1,1,1,1,0,1,1,1,1,1,))
+xmat <- cbind(1,x,c(1,1,1,1,1,0,1,1,1,1,1))
+exp(lm(y ~ xmat-1))
+lm(y ~ xmat)
+xmat
+xmat <- cbind(1,x,c(1,1,1,1,1,0,1,1,1,1,1,1))
+xmat <- cbind(1,x,c(1,1,1,1,1,0,1,1,1,1,1))
+lm(y ~ xmat)
+lm(y ~ xmat-1)
+exp(lm(y ~ xmat-1)$coefficients)
+exp(lm(y ~ xmat)$coefficients)
+xmat
+xmat <- cbind(1,x,c(1,1,1,1,1,0,1,1,1,1,1,1))
+g1 <- glm(use ~ factor(wind),binomial,shuttle)
+exp(g1)
+exp(g1$coefficients)
+g1 <- glm(use ~ factor(wind),binomial,shuttle)
+library(kernlab)
+load.library("kernlab")
+install.packages("kernlab")
+install.packages("kernlab",type="source")
+install.packages(caret)
+install.packages("caret")
+install.packages("caret",type=source)
+library(caret)
+install.packages("caret"repos=)
+install.packages("caret")
+data(state)#
+storms <- read.csv("repdata-data-StormData.csv",nrow=10000)#
+storms <- storms[storms$STATE %in% state.abb,]#
+#
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),#
+                              function(x) x[[1]]),#
+                       format = '%m/%d/%Y')#
+storms$Year <- year(storms$Date)#
+storms$Month <- months.Date(storms$Date)#
+storms$MonthF <- factor(storms$Month,levels=month.name)#
+#
+storms$lat <- storms$LATITUDE/100.0#
+storms$long <- (storms$LONGITUDE/100.0)*-1
+library(datasets)#
+library(plyr)#
+library(dplyr)  #
+library(lubridate)#
+library(tidyr)
+data(state)#
+storms <- read.csv("repdata-data-StormData.csv",nrow=10000)#
+storms <- storms[storms$STATE %in% state.abb,]#
+#
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),#
+                              function(x) x[[1]]),#
+                       format = '%m/%d/%Y')#
+storms$Year <- year(storms$Date)#
+storms$Month <- months.Date(storms$Date)#
+storms$MonthF <- factor(storms$Month,levels=month.name)#
+#
+storms$lat <- storms$LATITUDE/100.0#
+storms$long <- (storms$LONGITUDE/100.0)*-1
+table(storms$EVTYPE)
+table(storms$EVTYPE,storms$STATE)
+table(storms$MonthF)
+unique(storms$STATE)
+as.character(unique(storms$STATE))
+class(as.character(unique(storms$STATE)))
+as.character(unique(storms$STATE))[1]
+as.character(unique(storms$STATE))[2]
+dir()
+storms <- read.csv("result.txt")
+dim(storms)
+colnames(storms) <- c("BGN_DATE","STATE","EVTYPE","FATALITIES","LATITUDE","LONGITUDE" )
+str(storms)
+head(storms)
+head(storms,100)
+head(storms,200)
+str(storms)
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),#
+                                                    function(x) x[[1]]),#
+                                             format = '%m/%d/%Y')
+str(storms)
+s1 <- strsplit(as.character(storms$BGN_DATE)
+s1 <- strsplit(as.character(storms$BGN_DATE))
+s1 <- strsplit(as.character(storms$BGN_DATE),' ')
+head(s1)
+storms <- read.csv("repdata-data-StormData.csv",nrow=10000)
+str(storms)
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),function(x) {x[[1]]}),format = '%m/%d/%Y')
+str(storms)
+storms <- read.csv("result.txt")
+colnames(storms) <- c("BGN_DATE","STATE","EVTYPE","FATALITIES","LATITUDE","LONGITUDE" )
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),function(x) {x[[1]]}),format = '%m/%d/%Y')
+str(storms)
+table(storms$EVTYPE)
+storms10 <- storms[1:10,]
+strsplit(as.character(storms$BGN_DATE))
+strsplit(as.character(storms$BGN_DATE),' ')
+strsplit(as.character(storms10$BGN_DATE),' ')
+strsplit(as.character(storms10$BGN_DATE)," ")
+strsplit(as.character(storms10$BGN_DATE)," ")[1]
+strsplit(as.character(storms10$BGN_DATE)," ")[1][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[[1]][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[[1]]
+strsplit(as.character(storms10$BGN_DATE)," ")[[1]][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[[]][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[1]
+strsplit(as.character(storms10$BGN_DATE)," ")
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),print(x[[1]])
+)
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) print(x[[1]]))
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) as.Date(print(x[[1]])))
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) as.Date(print(x[[1]]),,format = '%m/%d/%Y'))
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) class(x[[1]]))
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) class(x[[1]]))[1]
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) (x[[1]])[1])
+sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) (x[[1]]))
+as.Date(sapply(strsplit(as.character(storms10$BGN_DATE)," "),function(x) (x[[1]])),format = '%m/%d/%Y')
+strsplit(as.character(storms10$BGN_DATE)," ")
+strsplit(as.character(storms10$BGN_DATE)," ")[[]][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[][1]
+strsplit(as.character(storms10$BGN_DATE)," ")[1]
+strsplit(as.character(storms10$BGN_DATE)," ")[0]
+l1 <- strsplit(as.character(storms10$BGN_DATE)," ")
+l1[1]
+l1[2]
+l1[2][1]
+l1[[2]][1]
+l1[[2]][2]
+l1[[4]][2]
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),#
+                              function(x) {x[[1]]})),format = '%m/%d/%Y')
+storms$Date <- as.Date(sapply(strsplit(as.character(storms$BGN_DATE),' '),#
+                              function(x) {x[[1]]}),format = '%m/%d/%Y')
+table(storms$Date)
+as.Date("01/01/2011",format = '%m/%d/%Y')
+storms$Date <- as.Date("01/01/2011",format = '%m/%d/%Y')
+table(storms$Date)
+data(state)
+state$abb
+dim(state)
+dim(states)
+dim(state)
+data(state)
+data(states)
+data(state)
+state.abb
+str(storms)
+as.list("AL","TX")
+list("AL","TX")
+state.abb
+class(state.abb)
+storms$STATE
